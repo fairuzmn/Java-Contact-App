@@ -44,7 +44,7 @@ public class ContactController {
 
     public Contact readById(String id) {
         for (int i = 0; i < database.getContact().size(); i++) {
-            Contact oldContact = database.getContact().get(i);;
+            Contact oldContact = database.getContact().get(i);
             if (oldContact.getId().equals(id)) {
                 return oldContact;
             }
